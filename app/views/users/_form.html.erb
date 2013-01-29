@@ -20,7 +20,7 @@
         <%= form_for(@user) do |f| %>
           <% if @user.errors.any? %>
             <div id="error_explanation">
-              <h2><%= pluralize(@user.errors.count, "error") %> No se puede registrar dos veces el mismo usuario o email</h2>
+              <h2 id="errormsg"><%= pluralize(@user.errors.count, "error") %> No se puede registrar dos veces el mismo usuario o email</h2>
               <ul>
               <% @user.errors.full_messages.each do |msg| %>
                 <li><%= msg %></li>
@@ -42,13 +42,13 @@
         <% end %>
       </div>
       <div id="social">
-      <a href="http://www.facebook.com/alertab" target="blank">
-        <%= image_tag 'icon-fb.png', alt:'logo_facebook', id:'socialimg'%></a>
-      <a href="http://www.twitter.com/alertab" target="blank">
-        <%= image_tag 'twicon.png', alt: 'logo-twitter', id:'socialimg'%></a>
-      <a href="http://www.rutanmedellin.org/actualidad/Paginas/alertab_si_lo_imaginas_es_posible.aspx" target="blank">
-        <%= image_tag 'icon-blog.png', alt: 'logo-twitter', id:'socialimg'%></a>
-    </div>
+        <a href="http://www.facebook.com/alertab" target="blank">
+          <%= image_tag 'icon-fb.png', alt:'logo_facebook', id:'socialimg'%></a>
+        <a href="http://www.twitter.com/alertab" target="blank">
+          <%= image_tag 'twicon.png', alt: 'logo-twitter', id:'socialimg'%></a>
+        <a href="http://www.rutanmedellin.org/actualidad/Paginas/alertab_si_lo_imaginas_es_posible.aspx" target="blank">
+          <%= image_tag 'icon-blog.png', alt: 'logo-twitter', id:'socialimg'%></a>
+      </div>
     </div>
   </div>
   <div id="hrdiv"></div>

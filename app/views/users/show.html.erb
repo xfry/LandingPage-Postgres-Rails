@@ -1,11 +1,32 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Name:</b>
-  <%= @user.name %>
-</p>
-
-<p>
-  <b>Email:</b>
-  <%= @user.email %>
-</p>
+<html>
+<body>
+  <div class ="masterhead">
+    <div id="container">
+      <div id="headers">
+        <%= image_tag 'imgcity.png', alt: 'Logotipo - Alertab', id:'logo'%>
+      </div>
+      <div id="description">
+        <h1 id="text-title"><em id="notice"><%= notice %></em></h1>
+        <em>
+	  	<strong>Nombre:</strong>
+	  		<%= @user.name %>
+		</em><br>
+		<em>
+	  	<strong>Email:</strong>
+	  		<%= @user.email %>
+		</em>
+      </div><br/>
+      <a href="mailto: TU_AMIGO@email.com?Subject=Amigo, te invito a conocer www.alertab.com"> <em id="notice">Invita a un amigo a conocer: www.alertab.com</em></a><br>
+      <div id="social">
+        <a href="http://www.facebook.com/alertab" target="blank">
+          <%= image_tag 'icon-fb.png', alt:'logo_facebook', id:'socialimg'%></a>
+        <a href="http://www.twitter.com/alertab" target="blank">
+          <%= image_tag 'twicon.png', alt: 'logo-twitter', id:'socialimg'%></a>
+        <a href="http://www.rutanmedellin.org/actualidad/Paginas/alertab_si_lo_imaginas_es_posible.aspx" target="blank">
+          <%= image_tag 'icon-blog.png', alt: 'logo-twitter', id:'socialimg'%></a>
+      </div>
+    </div>
+    <div id="hrdiv"></div>
+   </div>
+</body>
+</html>
