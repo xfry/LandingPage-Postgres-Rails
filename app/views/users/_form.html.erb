@@ -1,25 +1,77 @@
-<%= form_for(@user) do |f| %>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
-
-      <ul>
-      <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <title>Bienvenido a Alertab: Una nueva forma de cuidar tu familia mientras te desplazas de un lugar a otro!</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div class ="masterhead">
+    <div id="container">
+      <div id="headers">
+        <%= image_tag 'logo.png', alt: 'Logotipo - Alertab', id:'logo'%>
+      </div>
+      <div id="description">
+        <h1 id="text-title">Cuida a tu familia y amigos mientras se desplazan de un lugar a otro en tiempo real de una forma divertida, y conviértete en su ¡héroe!</h1>
+      </div>
     </div>
-  <% end %>
+    <div id="masterform">
+      <div id="text-mail-ground">
+        <%= form_for(@user) do |f| %>
+          <% if @user.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@user.errors.count, "error") %> No se puede registrar dos veces el mismo usuario o email</h2>
+              <ul>
+              <% @user.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+              <% end %>
+              </ul>
+            </div>
+          <% end %>
+          <div class="text-mail-ground">
+            <%= f.label :name, id: 'nombre' %><br />
+            <%= f.text_field :name, id: 'text-mail', value: 'Tu nombre', autofocus: 'autofocus'%>
+          </div>
+          <div class="field">
+            <%= f.label :email, id: 'nombre'%><br />
+            <%= f.text_field :email, id: 'text-mail', value: 'tu@email.com' %>
+          </div>
+          <div class="actions">
+            <%= f.submit "Registrar email", id: 'btnsend'%>
+          </div>
+        <% end %>
+      </div>
+      <div id="social">
+      <a href="http://www.facebook.com/alertab" target="blank">
+        <%= image_tag 'icon-fb.png', alt:'logo_facebook', id:'socialimg'%></a>
+      <a href="http://www.twitter.com/alertab" target="blank">
+        <%= image_tag 'twicon.png', alt: 'logo-twitter', id:'socialimg'%></a>
+      <a href="http://www.rutanmedellin.org/actualidad/Paginas/alertab_si_lo_imaginas_es_posible.aspx" target="blank">
+        <%= image_tag 'icon-blog.png', alt: 'logo-twitter', id:'socialimg'%></a>
+    </div>
+    </div>
+  </div>
+  <div id="hrdiv"></div>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+  <div id="howork">
+   <div class="contentimgleft">
+            <h2 class="tituloimg"><em>1. Crea Alertas</em></h2>
+              <%= image_tag "imgalert.png", alt: "alert", class: 'imgsalert1'  %>
+              <br/>
+            <div class="pieimg">
+              <em>Alerta a tus familiares y amigos sobre cualquier situación de riesgo en la ciudad.</em>
+            </div>
+    </div>
+    <div class="contentimgcenter">
+            <h2 class="tituloimg"><em>2. Tu Family Page</em></h2>
+              <%= image_tag "imgsocialshare.png", alt: "share", class: 'imgsalert2'  %>
+            <div class="pieimg"><em>Construye, agrega y cuida a las personas mas cercanas a ti por medio del Family Page.</em></div>
+    </div>
+    <div class="contentimgright">
+              <h2 class="tituloimg"><em>3. Crea rutas seguras</em></h2>
+              <%= image_tag "imgcommunity.png", alt: "community", class: 'imgsalert3'  %>
+              <div class="pieimg"><em>Crea, comparte y califica las rutas más seguras de tu ciudad con tus amigos y familiares</em></div>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</body>
+</html>

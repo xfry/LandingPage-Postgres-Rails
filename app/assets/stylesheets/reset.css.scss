@@ -1,0 +1,56 @@
+/*Reset Standar*/
+html, body, div, span, h1, h2, h3,
+a, em, img, ol, ul, li, form,label, table,
+tr, th, td{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+h1, h2, h3, p, a, em{
+	line-height: 1em;
+}
+
+/* HTML5 display-role reset for older browsers */
+body, article, aside, details, figcaption, figure, 
+footer, header, nav, section {
+	display: block;
+}
+
+body{
+	font: normal 400 1em "sans-serif","helvetica";
+	color: #aaa;
+	margin: 0;
+	text-align: justify;
+	padding: 0;
+	background: #ddd;
+	width: 100%;
+}
+
+h2,h1{
+	font-size: 1.5em;
+	
+}
+
+h2 {
+	font-size: 1em;
+}
+
+strong {
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+a:visited {
+	color: purple;
+}
+
+a:active {
+	color: red;
+}
+
+a:hover {
+	text-decoration: none;
+	color: teal;
+	cursor: pointer;
+}

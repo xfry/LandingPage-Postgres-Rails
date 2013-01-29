@@ -1,0 +1,54 @@
+@import url(http://fonts.googleapis.com/css?family=Courgette);
+body, div.header{
+	margin:0;
+	padding:0;
+	background:#ddd;
+}
+p,ul{
+	text-align: justify;
+	color:#333;
+}
+em{
+	color:#245;
+	after-border-top:solid 10px white; 
+}
+#container{
+	width:100%;
+	max-width: 700px;
+	min-width: 380px;
+	margin:auto;
+}
+.welcome{
+	width:100%;
+}
+.imgff{
+	width: 100%;
+	border-radius:10px; 
+	-moz-box-shadow: 5px 5px 5px 5px #999;
+	-webkit-box-shadow: 5px 5px 5px 5px #999;
+	box-shadow: 0px 5px 3px #999;
+}
+#articulo{
+	width: 100%;
+	margin:auto;
+}
+#medalla{
+	width: 80px;
+	height: 65px;
+	float:left;
+	background: url('http://behance.vo.llnwd.net/profiles26/1367179/projects/6879235/78046a5ad488099259c38c71c3401626.png');
+}
+#texto_medalla{
+
+}
+.nombreuser{
+	font: normal 500 30px 'Courgette', cursive;
+	color:red;
+}
+#pie{
+	width: 30px;
+	height: 30px;
+	background: url('http://behance.vo.llnwd.net/profiles26/1367179/projects/6879235/abb3c172de6c06f85f8bc520a78583b6.png');
+	margin:auto;
+	border-radius:50px; 
+}

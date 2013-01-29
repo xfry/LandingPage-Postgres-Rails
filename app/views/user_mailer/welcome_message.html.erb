@@ -1,17 +1,32 @@
-<!Doctype HTML>
+<!DOCTYPE html>
 <html>
 <head>
-	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
 </head>
 <body>
-	<h1>Bienvenido a www.alertab.com, <%= @user.name %></h1>
-    <p>
-      Tu e-mail ha sido registrado satisfactoriamente y pronto podras acceder a mas información sobre <a href="http://alertab.com" >Alertab, </a>
-      <br/>
-    </p>
-    <p>
-      Recuerda que puedes visisar nuestro <a href="facebook.com/alertab"> grupo de facebook </a>, y tambien puedes compartir con nosotros en nuestra cuenta de twitter <a href="http://twitter.com"> @alertab </a><br/>
-    </p>
-    <h2>Gracias por unirte a nosotros y demostrar tu interes, pronto reciviras una cordial invitación para ser parte de nuestro lanzamiento!</h2>
+	<div id="container">
+		<div class="header">
+			<a href="www.alertab.com"><img src="http://behance.vo.llnwd.net/profiles26/1367179/projects/6879235/4e84aebf0168ee93c09dbaa2d2a7160d.png"></a>
+		</div>
+		<div class="welcome">
+			<a href="www.alertab.com"><img class="imgff" src="http://behance.vo.llnwd.net/profiles26/1367179/projects/6879235/f32a201368c2d57a7faef7c89a814647.png" alt="family-friends"></a>
+		</div>
+		<div id="articulo">
+			<p><em class="nombreuser"><h2><%= @user.name %><h2></em><br>
+				Te damos las gracias por unirte a nosotros. Muy pronto conocerás una nueva forma de cuidarnos los unos a los otros, como una sola familia en sociedad.
+			</p>
+			<div id="premio">
+				<div id="medalla"></div>
+				<p id="texto_medalla">	Has ganado una medalla <em>Early Adopter </em> esta te servirá como un regalo especial en nuestro próximo lanzamiento, al cual estarás cordialmente invitado. Recuerda que puedes saber más sobre nosotros en nuestra <a href="http://facebook.com/alertab"><em>página de facebook,</em></a> en la cual podrás conocer cientos de personas interesadas en cuidarnos unos a otros.
+				</p>
+			</div>
+			<ul>
+				<li><a href="http://twitter.com/alertab"><em>También puedes encontrarnos en twitter</em></a></li>
+				<li><a href="www.blog.alertab.com"><em>Y por supuesto en nuestro blog.alertab.com</em></a></li>
+			</p>
+		</div>
+		<a href="http://www.alertab.com"><div id="pie"></div></a>
+	</div>
 </body>
 </html>

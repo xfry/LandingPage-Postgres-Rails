@@ -1,0 +1,75 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand|Julius+Sans+One);
+.masterhead{
+	width: 100%;
+	background: image-url('back_pattern.png');
+}
+#container{
+	max-width:700px;
+	max-width:380px;
+}
+#masterform{
+	max-width:250px;
+	min-width:250px;
+	margin:auto;
+}
+#headers{
+	margin:auto;
+}
+#logo{
+	width: 100%;
+}
+
+#text-title{
+	font: normal 500 30px 'Quicksand', cursive;
+	color:gray;
+	text-align:justify;
+}
+#text-mail, #btnsend{
+	color: gray;
+	font: italic normal 400 1em 'Quicksand', sans-serif;;
+	border-radius: 7px;
+	width: 250px;
+	height: 35px;
+	background: #eee;
+}
+#btnsend{
+	font-size:20px;
+	color: white;
+	height: 50px;
+	background: #1b7400;
+	margin-top:5px;
+}
+#nombre{
+	color: red;
+}
+#text-mail-ground{
+	border-radius: 7px;
+	width:100%;
+	max-width:700px;
+	min-width:380px;
+	height: 250px;
+	margin-top:10px;
+}
+#hrdiv{
+	width:100%;
+	height:8px;
+	background:image-url('separador-hr.png');
+}
+#howork{
+	max-width:700px;
+	min-width:380px;
+	margin:auto;
+}
+.contentimgleft, .contentimgcenter, .contentimgright{
+	float:left;
+}
+
+.imgsalert1, .imgsalert2, .imgsalert3, .pieimg{
+	width:220px;
+}
+#social{
+	text-align:center;
+}
+.pieimg{
+	padding:5px;
+}

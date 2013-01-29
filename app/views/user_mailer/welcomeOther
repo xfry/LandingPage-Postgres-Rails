@@ -1,0 +1,17 @@
+<!Doctype HTML>
+<html>
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+</head>
+<body>
+	<h1>Bienvenido a www.alertab.com, <%= @user.name %></h1>
+    <p>
+      Tu e-mail ha sido registrado satisfactoriamente y pronto podras acceder a mas información sobre <a href="http://alertab.com" >Alertab, </a>
+      <br/>
+    </p>
+    <p>
+      Recuerda que puedes visisar nuestro <a href="facebook.com/alertab"> grupo de facebook </a>, y tambien puedes compartir con nosotros en nuestra cuenta de twitter <a href="http://twitter.com"> @alertab </a><br/>
+    </p>
+    <h2>Gracias por unirte a nosotros y demostrar tu interes, pronto reciviras una cordial invitación para ser parte de nuestro lanzamiento!</h2>
+</body>
+</html>
