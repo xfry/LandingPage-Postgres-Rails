@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html lang="es-ES">
-<head>
-  <title>Bienvenido a Alertab: Una nueva forma de cuidar tu familia mientras te desplazas de un lugar a otro!</title>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta charset="UTF-8">
-</head>
-<body>
   <div class ="masterhead">
     <div id="container">
       <div id="headers">
         <%= image_tag 'logo.png', alt: 'Logotipo - Alertab', id:'logo'%>
       </div>
       <div id="description">
-        <h1 id="text-title">Cuida a tu familia y amigos mientras se desplazan de un lugar a otro en tiempo real de una forma divertida, y conviértete en su ¡héroe!</h1>
+        <h1 id="text-title">Cuida a tu familia y amigos mientras se desplazan de un lugar a otro en tiempo real y conviértete en su ¡héroe!</h1>
       </div>
     </div>
     <div id="masterform">
@@ -29,7 +21,7 @@
             </div>
           <% end %>
           <div class="text-mail-ground">
-            <%= f.label :name, id: 'nombre' %><br />
+            <%= f.label :nombre, id: 'nombre' %><br />
             <%= f.text_field :name, id: 'text-mail', value: 'Tu nombre', autofocus: 'autofocus'%>
           </div>
           <div class="field">
@@ -73,5 +65,15 @@
               <div class="pieimg"><em>Crea, comparte y califica las rutas más seguras de tu ciudad con tus amigos y familiares</em></div>
     </div>
   </div>
-</body>
-</html>
+  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38131909-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
