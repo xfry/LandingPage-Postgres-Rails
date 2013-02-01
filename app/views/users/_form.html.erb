@@ -20,16 +20,16 @@
               </ul>
             </div>
           <% end %>
-          <div class="text-mail-ground">
+          <div class="text-mail-ground" onClick="clearName();">
             <%= f.label :nombre, id: 'nombre' %><br />
-            <%= f.text_field :name, id: 'text-mail', value: 'Tu nombre', autofocus: 'autofocus'%>
+            <%= f.text_field :name, id: 'text-name', value: 'Tu nombre', autofocus: 'autofocus'%>
           </div>
-          <div class="field">
+          <div class="field" onClick="clearEmail();">
             <%= f.label :email, id: 'nombre'%><br />
             <%= f.text_field :email, id: 'text-mail', value: 'tu@email.com' %>
           </div>
           <div class="actions">
-            <%= f.submit "Registrar email", id: 'btnsend'%>
+            <%= f.submit "Únete Ahora!", id: 'btnsend'%>
           </div>
         <% end %>
       </div>
@@ -61,7 +61,7 @@
     </div>
     <div class="contentimgright">
               <h2 class="tituloimg"><em>3. Crea rutas seguras</em></h2>
-              <%= image_tag "imgcommunity.png", alt: "community", class: 'imgsalert3'  %>
+              <%= image_tag "imgrutas.png", alt: "community", class: 'imgsalert3'  %>
               <div class="pieimg"><em>Crea, comparte y califica las rutas más seguras de tu ciudad con tus amigos y familiares</em></div>
     </div>
   </div>
@@ -76,4 +76,16 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+
+<!--
+  var element2 = document.getElementById('text-name');
+  var element = document.getElementById('text-mail');
+  function clearName() {
+    element2.value ="";
+  }
+  function clearEmail() {
+    element.value ="";
+  }
+//-->
+
 </script>
